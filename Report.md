@@ -1,6 +1,6 @@
 # Report
 
-We used a Deep Q-Network (DQN) trained over 2000 episodes with a maximum timesteps per episode of 1000, and an epsilon value going from 1.0 to 0.01 with an epsilon decay of 0.995. The model uses two neural networks that each consist of three linear layers.
+We used a Deep Q-Network (DQN) trained over 2000 episodes with a maximum timesteps per episode of 1000, and an epsilon value going from 1.0 to 0.01 with an epsilon decay of 0.995. The model uses two neural networks that each consist of three linear layers. The neural nets have an input size equal to the number of states (37) and an output size equal to the number of actions (4). The hidden layers have 64 nodes.
 
 The model used a buffer size of 1e5, a batch size of 64, a discount factor (gamma) of 0.99, a tau factor for the update of the target network of 1e-3 and a learning rate of 5e-4. Updates occur every 4 time steps.
 
